@@ -1,3 +1,8 @@
+"""
+This function was shamelessly stolen from https://www.youtube.com/shorts/PNc_Ju3u-OE
+I did modify it by adding the operations
+"""
+
 def solve(nums): 
     if(len(nums) <= 1): 
         return [[nums[0], ""]] 
