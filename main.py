@@ -55,9 +55,9 @@ def getSolutions():
             num4 = int(line[6])
             key = frozenset({num1,num2,num3,num4})
             if key not in solutions.keys():
-                solutions[key] = {line}
+                solutions[key] = {line.strip()}
             else: 
-                solutions[key].add(line)
+                solutions[key].add(line.strip())
 
     return solutions
 
@@ -133,8 +133,6 @@ if __name__ == "__main__":
             playerAnswer = None 
             nums = [random.randint(1,9) for i in range(4)]
             key = frozenset({nums[0],nums[1],nums[2],nums[3]})
-            if key not in solutions.keys():
-                solution = {"NA"} 
             print(f"Your numbers are: {nums[0]} {nums[1]} {nums[2]} {nums[3]}") 
             print("Type in your solution like this: 1+2*3-4. You can use +, -, *, and /. You can also rearrange the order of the numbers. If you don't think there's a possible solution, type NA")
             playerAnswer = input().strip()
@@ -177,8 +175,6 @@ if __name__ == "__main__":
             playerAnswer = None 
             nums = [random.randint(1,9) for i in range(4)]
             key = frozenset({nums[0],nums[1],nums[2],nums[3]})
-            if key not in solutions.keys():
-                solution = {"NA"} 
             print(f"Your numbers are: {nums[0]} {nums[1]} {nums[2]} {nums[3]}") 
             print("Type in your solution like this: 1+2*3-4. You can use +, -, *, and /. You can also rearrange the order of the numbers. If you don't think there's a possible solution, type NA")
             t1 = threading.Thread(target = computer, args = (difficulty, answered))
