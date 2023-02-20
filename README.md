@@ -13,3 +13,9 @@ Some of the implementations are pretty "hacky" and I should consider finding mor
 For example: 
 
 (to be added later)
+
+### Setting Up 
+
+`git clone https://github.com/ostenloo/24game.git` 
+
+`pip install -r requirements.txt` 
