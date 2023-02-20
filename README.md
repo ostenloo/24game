@@ -6,7 +6,7 @@ Shamelessly stole the code to generate solutions from [here](https://www.youtube
 
 The other stuff was my own with help from ChatGPT lol 
 
-I actually learned quite a bit about multithreading and inputs/outputs in Python.
+I actually learned quite a bit about multithreading in Python.
 
 Some of the implementations are pretty "hacky" and I should consider finding more elegant solutions. 
 
