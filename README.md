@@ -23,5 +23,3 @@ For example:
 ## Disclaimer 
 
 I don't follow PEMDAS with the solutions. There are no parentheses and order of operations goes from left to right. `x` and `/` don't have precedence over `+` and `-`. I could implement these order of operation rules but it's a bit more complicated. This is why if you see a solution like `9+7*2-8`, the answer isn't `9+(7*2)-8 = 15`. It's `(9+7)*2-8 = 24`. 
-
-Another disclaimer: I don't think the solution checking is working atm. Will fix soon. 
