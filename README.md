@@ -2,7 +2,7 @@
 
 Command Line Python Program that plays the 24 game with you. 
 
-Shamelessly stole the code to generate solutions from (here)[https://www.youtube.com/shorts/PNc_Ju3u-OE]
+Shamelessly stole the code to generate solutions from [here](https://www.youtube.com/shorts/PNc_Ju3u-OE)
 
 The other stuff was my own with help from ChatGPT lol 
 
