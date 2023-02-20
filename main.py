@@ -28,7 +28,7 @@ def solve(nums):
 # idx = 0
 
 def createSolutionFile(): 
-    with open(f"solution24.txt", "w") as f: 
+    with open(f"solution241.txt", "w") as f: 
         for target in range(24,25): 
             for num1 in range(1,10): 
                 for num2 in range(1,10):  
@@ -37,10 +37,11 @@ def createSolutionFile():
                             values = solve([num1,num2,num3,num4])
                             for value in values: 
                                 if value[0] - 0.01 < target and value[0] + 0.01 > target: 
+                                    if num1 == 9 and num2 == 1 and num3 == 9 and num4 == 6: 
                                     # idx += 1
                                     # f.write(str(idx) + ". " + str(num1) + value[1][0:1] + str(num2) + value[1][1:2] + str(num3) + value[1][2:3] + str(num4) + " = " + str(target) + "\n")
-                                    # f.write(str(num1)+value[1][0:1]+str(num2)+value[1][1:2]+str(num3)+value[1][2:3]+str(num4)+"\n")
-                                    f.write(str(num1)+str(num2)+str(num3)+str(num4)+"\n")
+                                        f.write(str(num1)+value[1][0:1]+str(num2)+value[1][1:2]+str(num3)+value[1][2:3]+str(num4)+"\n")
+                                        # f.write(str(num1)+str(num2)+str(num3)+str(num4)+"\n")
     f.close() 
 
 def getSolutions(): 
@@ -66,13 +67,13 @@ def computer(difficulty, answered):
     while not answered.is_set():
         start = time.time() 
         if difficulty == 1:
-            wait = random.randint(25,30)
+            wait = random.randint(45,60)
         elif difficulty == 2:
-            wait = random.randint(20,25)
+            wait = random.randint(30,45)
         elif difficulty == 3:
-            wait = random.randint(15,20)
+            wait = random.randint(15,30)
         elif difficulty == 4: 
-            wait = random.randint(5,10) 
+            wait = random.randint(5,15) 
         for i in np.arange(0, wait, 0.1): 
             if answered.is_set():
                 break
