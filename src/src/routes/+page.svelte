@@ -1,7 +1,9 @@
 <div> 
-    <h1 class = "pt-4 text-center text-2xl font-semibold">
-        24 Game
-    </h1>
+    <div class = "flex flex-row items-center p-4 gap-8"> 
+      <h1 class = "text-3xl font-semibold">
+          24 Game
+      </h1>
+    </div>
     {#if showPopup}
     <Popup bind:showPopup yes={yes}/>
     {:else}
